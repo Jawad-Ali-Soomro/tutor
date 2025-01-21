@@ -1,77 +1,69 @@
 .header-container {
-    width: calc(100% - 100px);
-    padding: 20px 50px;
-    background: white;
-    position: fixed;
-    top: 0;
-    .logo {
-        gap: 5px;
-        cursor: pointer;
-        .logo-icon {
-            padding: 20px;
-            border: 1px solid;
-            color: black;
-            border-radius: 50%;
-            font-size: 1rem;
-        }
-        p {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: black;
-        }
+  width: calc(100% - 100px);
+  padding: 20px 50px;
+  background: white;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  .logo {
+    gap: 5px;
+    cursor: pointer;
+    img {
+      width: 80px;
     }
+  }
 
-    .navs-right {
-        .navs-main {
-            ul {
-                gap: 30px;
-                li {
-                    text-transform: uppercase;
-                    list-style: none;
-                    font-weight: 600;
-                    position: relative;
-                    color: rgba($color: #000000, $alpha:0.5);
-                    cursor: pointer;
-                    span {
-                        padding: 8px 15px;
-                        background: black;
-                        color: white;
-                        font-size: .5rem;
-                        position: absolute;
-                        top: -120%;
-                        left: 50%;
-                        font-weight: 600;
-                        border-radius: 20px;
-                    }
-                }
-                li:hover {
-                    color: black;
-                }
-                .active {
-                    color: black;
-                }
-            }
-        }
-        .icons {
-            gap: 10px;
-            margin-left: 50px;
-            .icon {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                font-size: 1.2rem;
-                cursor: pointer;
-            }
-        }
-        .btn-login {
-            width: 120px;
-            height: 50px;
+  .navs-right {
+    .navs-main {
+      ul {
+        gap: 30px;
+        li {
+          text-transform: capitalize;
+          list-style: none;
+          font-weight: 600;
+          position: relative;
+          color: rgba($color: #000000, $alpha: 0.5);
+          cursor: pointer;
+          span {
+            padding: 8px 15px;
             background: black;
-            border-radius: 25px;
-            font-size: 1rem;
             color: white;
+            font-size: 0.5rem;
+            position: absolute;
+            top: -120%;
+            left: 50%;
             font-weight: 600;
-            margin-left: 20px;
+            border-radius: 20px;
+          }
         }
+        li:hover {
+          color: black;
+        }
+        .active {
+          color: black;
+        }
+      }
     }
+    .icons {
+      gap: 10px;
+      margin-left: 50px;
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+    .btn-login {
+      width: 120px;
+      height: 50px;
+      background: black;
+      border-radius: 25px;
+      font-size: 1rem;
+      color: white;
+      font-weight: 600;
+      margin-left: 20px;
+    }
+  }
 }

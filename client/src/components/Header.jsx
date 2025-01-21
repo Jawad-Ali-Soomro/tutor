@@ -9,22 +9,19 @@ const Header = () => {
     const tab = window.location.pathname
   return (
     <div className="header-container flex bw">
-      <div className="logo flex">
-        <div className="logo-icon flex">
-          <GiBlackBook />
-        </div>
-        {/* <p>Tutor.</p> */}
-      </div>
+   <div className="logo flex">
+    <img src="/logo.png" alt="" />
+   </div>
       <div className="navs-right flex">
         <div className="navs-main flex">
           <ul className="flex">
             <li className={tab == '/' ? "active" : ""}>Home</li>
             <li>
-              Books <span>NEW</span>
+              Books <span>New</span>
             </li>
             <li>About Us</li>
             <li>
-              BLogs <span>Latest</span>
+              Blogs <span>Latest</span>
             </li>
           </ul>
         </div>
