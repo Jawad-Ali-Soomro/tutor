@@ -10,7 +10,7 @@
       line-height: 120px;
       margin-bottom: 200px;
       span {
-        color: #594a47;
+        color: royalblue;
         font-weight: 900;
       }
       .text-span {
@@ -18,6 +18,7 @@
         border-radius: 50%;
         cursor: pointer;
         position: relative;
+        color: royalblue  ;
         .stars {
           position: absolute;
           top: -50px;
@@ -31,7 +32,7 @@
         rotate: 45deg;
         width: 100px;
         height: 200px;
-        background: #eee;
+        background: rgba(65, 105, 225, 0.466);
         position: absolute;
         z-index: -1;
       }
@@ -40,11 +41,10 @@
         content: "";
         width: 100px;
         height: 250px;
-        border: 5px solid;
         position: absolute;
         border-radius: 125px;
         top: -25%;
-        border: 5px solid #594a472e;
+        border: 5px solid rgba(65, 105, 225, 0.466);
       }
     }
     .catalog {
@@ -78,13 +78,13 @@
         width: 0;
         transition: 0.5s;
         height: 40px;
-        background: #eee;
+        background: royalblue;
         position: absolute;
         bottom: -20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: black;
+        color: white;
         font-size: 0.7rem;
         font-weight: 600;
         height: 0;
@@ -92,7 +92,6 @@
       }
       .img-card:hover::after {
         width: calc(100% - 40px);
-        border: 2px solid;
         height: 40px;
         border-radius: 20px;
       }
@@ -137,7 +136,7 @@
     margin-bottom: 100px;
     justify-content: space-between;
     padding: 100px 00px;
-    border: 1px solid #594a47;
+    border: 1px solid royalblue;
     border-width: 1px 0px 1px 0px;
     .cat-wrapper {
       width: 100%;
@@ -157,13 +156,14 @@
           transition: 0.5s;
           width: 0;
           height: 0;
-          background: white;
-          color: black;
+          background: royalblue;
+          color: white;
           position: absolute;
           bottom: -22px;
           border-radius: 25px;
-          font-size: 0.8rem;
-          font-weight: 700;
+          border: none;
+          font-size: 0.7rem;
+          font-weight: 600;
           overflow: hidden;
           transition: 0.5s;
           text-transform: capitalize;
@@ -173,7 +173,6 @@
       .cat-card:hover {
         transform: translateY(-20px);
         .name-cat {
-          border: 2px solid black;
           width: 80%;
           height: 50px;
           bottom: calc(-26px);
@@ -189,9 +188,9 @@
     background: white;
     top: -35px;
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     border-radius: 50px;
-    color: rgba(0, 0, 0, 0.452);
+    color: royalblue  ;
     border: 2px solid;
     text-transform: capitalize;
   }

@@ -1,5 +1,5 @@
 import "../styles/latest.scss";
-import { BsCartPlus } from "react-icons/bs";
+import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const Latest = () => {
   const booksData = [
@@ -144,9 +144,9 @@ const Latest = () => {
               <p className="price name">PKR.{book?.price}</p>
               <div className="category flex">{book?.category}</div>
               <div className="btns flex">
-                <button>Buy Now</button>
-                <button>
-                  <BsCartPlus />
+                <button className="flex">Buy Now</button>
+                <button className="flex">
+                  <HiOutlineShoppingCart />
                 </button>
               </div>
             </div>
