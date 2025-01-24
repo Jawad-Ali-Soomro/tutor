@@ -1,95 +1,172 @@
-.login-container  {
-    width: 100%;
-    height: 100vh;
-    background: rgba($color: #000000, $alpha: 0.3);
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(2px);
-    .login-wrapper {
-        padding: 30px;
-        background: white;
-        animation: fromTop 500ms linear;
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background: rgba($color: #000000, $alpha: 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  .login-wrapper {
+    padding: 30px;
+    background: white;
+    animation: animate 300ms ease;
+    border-radius: 25px;
+    gap: 10px;
+    .img-sect {
+      width: 70px;
+      height: 70px;
+      border: 1px solid rgba(65, 105, 225, 0.428);
+      border-radius: 50%;
+      img {
+        width: 40px;
+      }
+    }
+    h2 {
+      font-size: 1.2rem;
+      span {
+        color: royalblue;
+        font-weight: 900;
+        position: relative;
+      }
+      span::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: rgba(65, 105, 225, 0.208);
+        position: absolute;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        left: calc(100% - 50px);
+        top: calc(100% - 35px);
+      }
+    }
+    .form {
+      gap: 5px;
+      margin-top: 30px;
+      .input-wrapper {
+        width: 320px;
+        height: 50px;
+        background: #eee;
         border-radius: 25px;
-        gap: 
-        10px;
-       .img-sect {
-        width: 70px;
-        height: 70px;   
-        border: 1px solid rgba(65, 105, 225, 0.428);
-        border-radius: 50%;
-        img {
-            width: 40px;
+        border: 1px solid transparent;
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        input {
+          width: calc(100% - 20px);
+          height: 100%;
+          padding-left: 20px;
+          background: transparent;
+          border: none;
+          outline: none;
         }
-       }
-        h2 {
-            font-size: 1.2rem;
-            span {
-                color: royalblue;
-                font-weight: 900;
-                position: relative;
-            }
-            span::after {
-                content: '';
-                width: 50px;
-                height: 50px;
-                background: rgba(65, 105, 225, 0.208);
-                position: absolute;
-                border-bottom-left-radius: 100px;
-                border-top-right-radius: 100px;
-                left: calc(100% - 50px);
-                top:  calc(100% -   35px) ;
-            }
+        .icon {
+          width: 45px;
+          height: 45px;
+          position: absolute;
+          right: 0px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: 0.3s;
         }
-       .form  {
-        gap: 5px;
-        margin-top: 30px;
-        .input-wrapper {
-            width: 320px;
-            height: 50px;
-            background: #eee;
-            border-radius: 25px;
-            border: 1px solid transparent;
-            transition: .3s;
-            input {
-                width: calc(100% - 20px);
-                height: 100%;
-                padding-left: 20px;
-                background: transparent;
-                border: none;
-                outline: none;
-            }
+      }
+      .input-wrapper:focus-within {
+        border: 1px solid royalblue;
+        background: transparent;
+        input {
+          color: royalblue;
         }
-        .input-wrapper:focus-within {
-            border: 1px solid #80808090;
-            background: transparent;
+      }
+      .text {
+        width: 100%;
+        text-align: right;
+        justify-content: end;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: rgba($color: #000000, $alpha: 0.7);
+        cursor: pointer;
+      }
+      .text:hover {
+        color: black;
+      }
+      .btn-blue {
+        border: 1px solid transparent;
+        width: 160px;
+        height: 45px;
+        background: royalblue;
+        border-radius: 25px;
+        color: white;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 160px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .btn-blue:hover {
+        border: 1px solid;
+        color: royalblue;
+        background: transparent;
+      }
+      .text-center {
+        width: 100%;
+        position: relative;
+        p {
+            padding: 10px;
+            background: white;
+            z-index: 1;
         }
-        .btn-blue {
-            border: 1px solid transparent;
-            width: 160px;
-            height: 45px;
-            background: royalblue;
-            border-radius: 25px;
+      }
+      .text-center::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background: orange;
+      }
+      .icons-reg {
+        width: 100%;
+        justify-content: space-between;
+        .icon {
+          width: 50px;
+          height: 50px;
+          border: 1px solid orange;
+          border-radius: 50%;
+          font-size: 1.2rem;
+        }
+        .icon:hover {
+            background: orange;
             color: white;
-            font-size: .8rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-left: 160px;
             cursor: pointer;
-            transition: .3s;
         }
-        .btn-blue:hover {
-            border: 1px solid;
-            color: royalblue;
+        button {
+          width: 210px;
+          height: 50px;
+          background: orange;
+          border: none;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: white;
+          border-radius: 25px;
+        }
+        button:hover {
             background: transparent;
+            border: 1px solid;
+            color: orange;
+            cursor: pointer;
         }
-       }
+      }
     }
-    @keyframes fromTop {
-        from {
-            transform: translateY(-200px);
-        } to {
-            transform: translateY(0);
-        }
+  }
+  @keyframes fromTop {
+    from {
+      transform: translateY(-200px);
     }
+    to {
+      transform: translateY(0);
+    }
+  }
 }
