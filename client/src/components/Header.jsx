@@ -1,42 +1,48 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import "../styles/header.scss";
 import { GiBlackBook } from "react-icons/gi";
 import { RiSearch2Line } from "react-icons/ri";
 import { IoNotificationsOutline } from "react-icons/io5";
+import Login from "./Login";
 
 const Header = () => {
-    const tab = window.location.pathname
+  const [showLogin, setShowLogin] = useState(false)
+  const onClose = () => {
+    setShowLogin(false)
+  }
+  const tab = window.location.pathname;
   return (
     <div className="header-container flex bw">
-   <div className="logo flex">
-    <img src="/logo.png" alt="" />
-   </div>
+      <div className="logo flex">
+        <img src="/logo.png" alt="" />
+      </div>
       <div className="navs-right flex">
         <div className="navs-main flex">
           <ul className="flex">
-            <li className={tab == '/' ? "active" : ""}>Home</li>
+            <li className={tab == "/" ? "active" : ""}>Home</li>
             <li>
               Books <span>New</span>
             </li>
-            <li>About Us</li>
+            <li>About</li>
             <li>
               Blogs <span>Latest</span>
             </li>
           </ul>
         </div>
         <div className="icons flex">
-          <div className="icon flex">
+          {/* <div className="icon flex">
             <RiSearch2Line />
-          </div>
+          </div> */}
           <div className="icon flex">
             <IoNotificationsOutline />
           </div>
+          <div className="btn-login flex" onClick={() => setShowLogin(true)}>LOGIN</div>
         </div>
-        {/* <div className="btn-login flex">
-            LOGIN
-        </div> */}
       </div>
+      {
+        showLogin && <Login onClose={onClose} />
+      }
     </div>
   );
 };

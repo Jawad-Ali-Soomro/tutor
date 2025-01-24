@@ -1,5 +1,5 @@
 import "../styles/latest.scss";
-import { HiOutlineShoppingCart } from "react-icons/hi";
+import { MdOutlineBookmarkAdd } from "react-icons/md";
 
 const Latest = () => {
   const booksData = [
@@ -29,108 +29,45 @@ const Latest = () => {
     },
     {
       image:
-        "https://booksvilla.com.pk/cdn/shop/products/51n-q69gn4L_2000x.jpg?v=1661231305",
-      name: "Master Your Emotions",
-      price: 2499,
-      category: "Psychology",
-      author: "Thibaut Meurisse",
+        "https://m.media-amazon.com/images/I/513NdzH2XvL._SY1200_SX1200_.jpg",
+      name: "The God Of Woods.",
+      price: 4200,
+      category: "Kindle Edition",
+      author: "Liz Moore.",
     },
     {
       image:
-        "https://booksvilla.com.pk/cdn/shop/files/Screenshot-20231125-210728_Instagram_1200x.jpg?v=1700928810",
-      name: "Maala",
-      price: 2499,
+        "https://m.media-amazon.com/images/I/41xBkE-i2oL.AC_SX500.jpg",
+      name: "James. A Novel",
+      price: 4299,
       category: "Poetry",
-      author: "Nimra Ahmed",
+      author: "Percival Everett",
     },
     {
       image:
-        "https://booksvilla.com.pk/cdn/shop/files/12432220_1200x.jpg?v=1737337396",
-      name: "The False Prince",
+        "https://m.media-amazon.com/images/I/81a+669WiRL._SY466_.jpg",
+      name: "Fire Exit",
       price: 2499,
-      category: "Fantasy",
-      author: "Jennifer A.Neilsen",
+      category: "Novel",
+      author: "Morgan Talty",
     },
     {
       image:
-        "https://booksvilla.com.pk/cdn/shop/products/27883214_1200x.jpg?v=1662453659",
-      name: "Caraval",
-      price: 2499,
+        "https://www.tariqbooks.com/cdn/shop/files/FrankWood_sBusinessAccountingVolume1_14thedition_720x.webp?v=1715768793",
+      name: "Business Accounting",
+      price: 1700,
       category: "Business",
-      author: "Stephanie Garber",
+      author: "Frank Wood",
     },
     {
       image:
-        "https://booksvilla.com.pk/cdn/shop/products/51n-q69gn4L_2000x.jpg?v=1661231305",
-      name: "Master Your Emotions",
+        "https://www.tariqbooks.com/cdn/shop/files/ComputerScienceA-LevelPastPaper2TopicalWorkbook.png?v=1698842020",
+      name: "Computer Science.",
       price: 2499,
-      category: "Psychology",
-      author: "Thibaut Meurisse",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/files/Screenshot-20231125-210728_Instagram_1200x.jpg?v=1700928810",
-      name: "Maala",
-      price: 2499,
-      category: "Poetry",
-      author: "Nimra Ahmed",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/files/12432220_1200x.jpg?v=1737337396",
-      name: "The False Prince",
-      price: 2499,
-      category: "Fantasy",
-      author: "Jennifer A.Neilsen",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/products/27883214_1200x.jpg?v=1662453659",
-      name: "Caraval",
-      price: 2499,
-      category: "Business",
-      author: "Stephanie Garber",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/products/51n-q69gn4L_2000x.jpg?v=1661231305",
-      name: "Master Your Emotions",
-      price: 2499,
-      category: "Psychology",
-      author: "Thibaut Meurisse",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/files/Screenshot-20231125-210728_Instagram_1200x.jpg?v=1700928810",
-      name: "Maala",
-      price: 2499,
-      category: "Poetry",
-      author: "Nimra Ahmed",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/files/12432220_1200x.jpg?v=1737337396",
-      name: "The False Prince",
-      price: 2499,
-      category: "Fantasy",
-      author: "Jennifer A.Neilsen",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/products/27883214_1200x.jpg?v=1662453659",
-      name: "Caraval",
-      price: 2499,
-      category: "Business",
-      author: "Stephanie Garber",
-    },
-    {
-      image:
-        "https://booksvilla.com.pk/cdn/shop/products/51n-q69gn4L_2000x.jpg?v=1661231305",
-      name: "Master Your Emotions",
-      price: 2499,
-      category: "Psychology",
-      author: "Thibaut Meurisse",
-    },
+      category: "Computer Science",
+      author: "Topical Workbook",
+    }
+    
   ];
   return (
     <div className="latest-container flex">
@@ -146,7 +83,7 @@ const Latest = () => {
               <div className="btns flex">
                 <button className="flex">Buy Now</button>
                 <button className="flex">
-                  <HiOutlineShoppingCart />
+                  <MdOutlineBookmarkAdd />
                 </button>
               </div>
             </div>

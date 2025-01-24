@@ -41,6 +41,7 @@ const Home = () => {
     "https://booksvilla.com.pk/cdn/shop/files/12432220_300x.jpg?v=1737337396",
   ];
 
+
   const text = "Books";
 
   return (
