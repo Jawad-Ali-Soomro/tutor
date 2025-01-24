@@ -1,0 +1,30 @@
+.footer-container {
+  width: calc(100% - 100px);
+  margin: 50px;
+  padding-top: 50px;
+  border-top: 1px solid;
+  img {
+    width: 200px;
+    height: 150px;
+  }
+  .footer-text {
+      align-items: end;
+    p {
+      max-width: 405px;
+      text-align: justify;
+    }
+    .links-icons {
+        gap: 2px;
+        .icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid;
+            margin-top: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+    }
+  }
+ 
+}
