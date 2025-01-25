@@ -28,6 +28,9 @@ const Header = () => {
             <li>
               Blogs <span>Latest</span>
             </li>
+            <li>
+              Developer <span style={{marginLeft:'20px'}}>API</span>
+            </li>
           </ul>
         </div>
         <div className="icons flex">
