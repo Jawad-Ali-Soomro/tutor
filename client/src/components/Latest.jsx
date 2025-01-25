@@ -1,8 +1,9 @@
 import "../styles/latest.scss";
 import { MdOutlineBookmarkAdd } from "react-icons/md";
-import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+import {useNavigate} from 'react-router-dom'
 
 const Latest = () => {
+  const navigate = useNavigate()
   const booksData = [
     {
       image:
@@ -73,7 +74,7 @@ const Latest = () => {
         {booksData?.map((book) => {
           return (
             <div className="book-card flex col" key={book.name}>
-              <img src={book.image} alt="" />
+              <img onClick={() => navigate('/book/12') + window.location.reload()} src={book.image} alt="" />
               <p className="author name">{book?.author}</p>
               <p className="name">{book?.name}</p>
               <p className="price name">PKR.{book?.price}</p>
@@ -88,15 +89,15 @@ const Latest = () => {
           );
         })}
       </div>
-      <div className="pagination flex">
-        <div className="icon flex">
-          <GrLinkPrevious />
-        </div>
-        <div className="icon flex">
-          <GrLinkNext />
-        </div>
-        <button>View  all</button>
-      </div>
+        {/* <div className="pagination flex">
+          <div className="icon flex">
+            <GrLinkPrevious />
+          </div>
+          <div className="icon flex">
+            <GrLinkNext />
+          </div>
+          <button>View  all</button>
+        </div> */}
     </div>
   );
 };

@@ -19,7 +19,7 @@ const Home = () => {
     <section className="home-container flex col">
       <div className="home-wrapper flex col">
         <h1>
-          Let's find the <span>Perfect</span>{" "}
+          Let&apos;s find the <span>Perfect</span>{" "}
           <span className="text-span">
             <div className="stars flex">
               <WiStars />

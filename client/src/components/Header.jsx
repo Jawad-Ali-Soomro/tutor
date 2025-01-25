@@ -5,16 +5,18 @@ import { GiBlackBook } from "react-icons/gi";
 import { RiSearch2Line } from "react-icons/ri";
 import { IoNotificationsOutline } from "react-icons/io5";
 import Login from "./Login";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [showLogin, setShowLogin] = useState(false)
+  const navigate = useNavigate();
+  const [showLogin, setShowLogin] = useState(false);
   const onClose = () => {
-    setShowLogin(false)
-  }
+    setShowLogin(false);
+  };
   const tab = window.location.pathname;
   return (
     <div className="header-container flex bw">
-      <div className="logo flex">
+      <div className="logo flex" onClick={() => navigate("/")}>
         <img src="/logo.png" alt="" />
       </div>
       <div className="navs-right flex">
@@ -29,7 +31,7 @@ const Header = () => {
               Blogs <span>Latest</span>
             </li>
             <li>
-              Developer <span style={{marginLeft:'20px'}}>API</span>
+              Developer <span style={{ marginLeft: "20px" }}>API</span>
             </li>
           </ul>
         </div>
@@ -40,12 +42,12 @@ const Header = () => {
           <div className="icon flex">
             <IoNotificationsOutline />
           </div>
-          <div className="btn-login flex" onClick={() => setShowLogin(true)}>LOGIN</div>
+          <div className="btn-login flex" onClick={() => setShowLogin(true)}>
+            LOGIN
+          </div>
         </div>
       </div>
-      {
-        showLogin && <Login onClose={onClose} />
-      }
+      {showLogin && <Login onClose={onClose} />}
     </div>
   );
 };

@@ -103,10 +103,12 @@
       position: absolute;
       bottom: 80px;
       left: 50px;
+      cursor: pointer;
       .icon-scroll {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 30px;
-        border: 1px solid;
+        border: 2px solid;
+        color: royalblue;
         border-radius: 50%;
         overflow: hidden;
         .animated-icon {
@@ -114,10 +116,10 @@
         }
         @keyframes animateIcon {
           from {
-            transform: translateY(-55px);
+            transform: translateY(-60px);
           }
           to {
-            transform: translateY(55px);
+            transform: translateY(60px);
           }
         }
       }
@@ -126,6 +128,8 @@
         font-weight: Macondo;
         padding-left: 10px;
         text-transform: capitalize !important;
+        color: rgba(65, 105, 225, 0.452);
+        font-weight: 900;
       }
     }
   }
