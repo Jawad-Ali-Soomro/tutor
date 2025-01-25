@@ -71,7 +71,7 @@ const Home = () => {
           <p>Scroll Down</p>
         </div>
       </div>
-      <div className="categories flex">
+      {/* <div className="categories flex">
         <div className="cat-wrapper flex bw">
         {
         bookCategories?.map((cat) => {
@@ -84,7 +84,7 @@ const Home = () => {
         })
         }
         </div>
-      </div>
+      </div> */}
       <Latest />
     </section>
   );

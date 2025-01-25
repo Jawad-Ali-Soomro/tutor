@@ -1,5 +1,6 @@
 import "../styles/latest.scss";
 import { MdOutlineBookmarkAdd } from "react-icons/md";
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 
 const Latest = () => {
   const booksData = [
@@ -36,16 +37,14 @@ const Latest = () => {
       author: "Liz Moore.",
     },
     {
-      image:
-        "https://m.media-amazon.com/images/I/41xBkE-i2oL.AC_SX500.jpg",
+      image: "https://m.media-amazon.com/images/I/41xBkE-i2oL.AC_SX500.jpg",
       name: "James. A Novel",
       price: 4299,
       category: "Poetry",
       author: "Percival Everett",
     },
     {
-      image:
-        "https://m.media-amazon.com/images/I/81a+669WiRL._SY466_.jpg",
+      image: "https://m.media-amazon.com/images/I/81a+669WiRL._SY466_.jpg",
       name: "Fire Exit",
       price: 2499,
       category: "Novel",
@@ -66,11 +65,10 @@ const Latest = () => {
       price: 2499,
       category: "Computer Science",
       author: "Topical Workbook",
-    }
-    
+    },
   ];
   return (
-    <div className="latest-container flex">
+    <div className="latest-container flex col">
       <div className="latest-wrapper flex">
         {booksData?.map((book) => {
           return (
@@ -89,6 +87,15 @@ const Latest = () => {
             </div>
           );
         })}
+      </div>
+      <div className="pagination flex">
+        <div className="icon flex">
+          <GrLinkPrevious />
+        </div>
+        <div className="icon flex">
+          <GrLinkNext />
+        </div>
+        <button>View  all</button>
       </div>
     </div>
   );
